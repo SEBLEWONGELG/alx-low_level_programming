@@ -1,6 +1,2 @@
 #!/bin/bash
 gcc -c $CFILE
-/**
-* main - main block
-* Return: 0
-*/
