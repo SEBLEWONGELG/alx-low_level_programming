@@ -1,21 +1,21 @@
-#include <stdio.h>
-
+#include<stdio.h>
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
-
-	char c;
-	int i;
-
-	for (i = 0; i < 10; i++)
-	{
-		putchar(i + '0');
-	}
-	for (c = 'a'; c < 'g'; c++)
-	{
-		putchar(c);
-	}
-	putchar('\n');
-
-	return (0);
-
+char ch = 'a';
+int i = 48;
+for (i = 48; i <= 57; i++)
+{
+putchar(i);
+}
+for (ch = 'a'; ch <= 'f'; ch++)
+{
+putchar(ch);
+}
+putchar('\n');
+return (0);
 }
