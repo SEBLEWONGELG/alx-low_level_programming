@@ -1,37 +1,48 @@
-#include<stdio.h>
+#include <stdio.h>
 /**
- * main - Entry point
- *
- * Return: Always 0 (Success)
- */
+* main - Prints numbers between 00 to 99.
+*
+* Return: Always 0 (Success)
+*/
 int main(void)
 {
-int i = 48;
-int j = 48;
-int k = 48;
-int l = 48;
-for (i = 48; i <= 57; i++)
-{
-for (j = 48 ; j <= 57; j++)
-{
-for (k = 48 ; k <= 57; k++)
-{
-for (l = 49 ; l <= 57; l++)
-{
-putchar(i);
-putchar(j);
-putchar(' ');
-putchar(k);
-putchar(l);
-if (i < 57 || j < 57 || k < 57 || l < 57)
-{
-putchar(',');
-putchar(' ');
-}
-}
-}
-}
-}
-putchar('\n');
-return (0);
+	int i, e, g, h, op1, op2;
+
+	i = e = g = h = 48;
+
+	while (h < 58)
+	{
+		g = 48;
+		while (g < 58)
+		{
+			e = 48;
+			while (e < 58)
+			{
+				i = 48;
+				while (i < 58)
+				{
+					op1 = (h * 10) + g;
+					op2 = (e * 10) + i;
+					if (op1 < op2)
+					{
+					putchar(h);
+					putchar(g);
+					putchar(' ');
+					putchar(e);
+					putchar(i);
+					if (h == 57 && e == 57 && i == 57 && g == 56)
+						break;
+					putchar(',');
+					putchar(' ');
+					}
+					i++;
+				}
+				e++;
+			}
+			g++;
+		}
+		h++;
+	}
+	putchar('\n');
+	return (0);
 }
