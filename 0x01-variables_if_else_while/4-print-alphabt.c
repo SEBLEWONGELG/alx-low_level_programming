@@ -1,15 +1,19 @@
-#include <stdio.h>
-
+#include<stdio.h>
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
-	char alp = 'a';
-	for ( ; alp <= 'z' ; alp++)
-		if(alp != 'q' && alp != 'e' )
-			putchar(alp);
-
-	putchar('\n');
-
-
-	return(0);
-
+char ch = 'a';
+for (ch = 'a'; ch <= 'z'; ch++)
+{
+if (ch != 'q' && ch != 'e')
+{
+putchar(ch);
+}
+}
+putchar('\n');
+return (0);
 }
