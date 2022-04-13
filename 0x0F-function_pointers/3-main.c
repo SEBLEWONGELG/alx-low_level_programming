@@ -1,14 +1,22 @@
-#include "function_pointers.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include "3-calc.h"
 /**
-* print_name - function
-* @name: name of string to print
-* @f: pointer to func print_name
-*
-* Function to print a name
-* Return: 0
-*/
-void print_name(char *name, void (*f)(char *))
+  * main - initial entry
+  * @argc: takes in arguments
+  * @argv: number of args
+  * Return: 0
+  */
+int main(int argc, char **argv)
 {
-	if (f != NULL)
-		f(name);
+	int result;
+
+	if (argc != 4)
+	{
+		printf("Error\n");
+		exit(98);
+	}
+	result = (*get_op_func(argv[2]))(atoi(argv[1]), atoi(argv[3]));
+	printf("%d\n", result);
+	return (0);
 }
