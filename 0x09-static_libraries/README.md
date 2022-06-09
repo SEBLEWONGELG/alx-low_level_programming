@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+#!/bin/bash
+>>>>>>> d53b048e33333d81fc63d40df907d7d630759bfd
 # 0x09-static_libraries
 
 ## libmy.a
